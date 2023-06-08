@@ -6,11 +6,11 @@ import { Sequelize } from "sequelize";
 // });
 
 const db = new Sequelize({
-	username: process.env.DB_USERNAME,
-	password: process.env.DB_PASSWORD,
-	database: process.env.DATABASE,
-	port: process.env.DB_PORT,
-	host: process.env.DB_HOST,
+	username: process.env.MYSQLUSERNAME,
+	password: process.env.MYSQLPASSWORD,
+	database: process.env.MYSQLDATABASE,
+	port: process.env.MYSQLPORT,
+	host: process.env.MYSQLHOST,
 	dialect: "mysql",
 });
 export default db;
